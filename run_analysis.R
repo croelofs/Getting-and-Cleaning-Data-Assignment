@@ -51,5 +51,5 @@ avgcolumnnames <- c(columnnames[1:2], paste0(columnnames[ 3:length(columnnames) 
 names(summarydata) <- avgcolumnnames
 
 # output tidy data sets
-write.table(mergeddataset, file = "tidydataset.txt")
-write.table(aggregateddata, file = "summarydataset.txt")
+write.table(mergeddataset, file = "tidydataset.txt", row.name=FALSE)
+write.table(summarydata, file = "summarydataset.txt", row.name=FALSE)
